@@ -33,5 +33,8 @@ func main() {
 		c.String(200, "pong")
 	})
 
-	router.Run(":8080")
+	router.Run(":8088")
 }
+// [GIN-debug] Listening and serving HTTP on :8088
+//192.168.88.4 - [Tue, 20 Jul 2021 15:21:11 CST] "GET /ping HTTP/1.1 200 60.7µs "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.67" "
+//192.168.88.4 - [Tue, 20 Jul 2021 15:21:12 CST] "GET /favicon.ico HTTP/1.1 404 943ns "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.67" "

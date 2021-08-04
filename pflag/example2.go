@@ -17,3 +17,8 @@ func main() {
 	fmt.Printf("argument list is: %v\n", pflag.Args())
 	fmt.Printf("the first argument is: %v\n", pflag.Arg(0))
 }
+// [going@dev pflag]$ go run example2.go -h
+//Usage of /tmp/go-build862866068/b001/exe/example2:
+//      --flagname int   help message for flagname (default 1234)
+//pflag: help requested
+//exit status 2

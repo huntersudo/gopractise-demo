@@ -31,7 +31,8 @@ func main() {
 		viper.SetConfigType("yaml") // 如果配置文件名中没有文件扩展名，则需要指定配置文件的格式，告诉viper以何种格式解析文件
 	} else {
 		viper.AddConfigPath(".")          // 把当前目录加入到配置文件的搜索路径中
-		viper.AddConfigPath("$HOME/.iam") // 配置文件搜索路径，可以设置多个配置文件搜索路径
+		//viper.AddConfigPath("$HOME/.iam") // 配置文件搜索路径，可以设置多个配置文件搜索路径
+		viper.AddConfigPath("./") // 配置文件搜索路径，可以设置多个配置文件搜索路径
 		viper.SetConfigName("config")     // 配置文件名称（没有文件扩展名）
 	}
 
