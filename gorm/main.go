@@ -9,6 +9,13 @@ import (
 	"gorm.io/gorm"
 )
 
+// Product
+//type Model struct {
+//	ID        uint `gorm:"primarykey"`
+//	CreatedAt time.Time
+//	UpdatedAt time.Time
+//	DeletedAt DeletedAt `gorm:"index"`
+//}
 type Product struct {
 	gorm.Model
 	Code  string `gorm:"column:code"`
@@ -20,6 +27,7 @@ func (p *Product) TableName() string {
 	return "product"
 }
 
+// go run main.go -H 127.0.0.1:3306 -u iam -p iam1234 -d test
 var (
 	host     = pflag.StringP("host", "H", "127.0.0.1:3306", "MySQL service host address")
 	username = pflag.StringP("username", "u", "root", "Username for access to mysql service")
